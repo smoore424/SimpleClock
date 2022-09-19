@@ -21,12 +21,12 @@ class DimmerButton: UIButton {
     private func createButton() {
         translatesAutoresizingMaskIntoConstraints = false
         
-        let image = UIImage(systemName: "gear")?.withTintColor(.systemGray3, renderingMode: .alwaysOriginal)
+        let image = UIImage(systemName: "gear")?.withTintColor(Colors.shared.gray, renderingMode: .alwaysOriginal)
     
         setImage(image, for: .normal)
         
-        heightAnchor.constraint(equalToConstant: 44).activate()
-        widthAnchor.constraint(equalTo: self.heightAnchor).activate()
+        heightAnchor.constraint(equalToConstant: 44).isActive = true
+        widthAnchor.constraint(equalTo: self.heightAnchor).isActive = true
     }
 
 }

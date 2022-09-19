@@ -9,6 +9,8 @@ import UIKit
 
 class ClockViewController: UIViewController {
 
+    let dimmerButton = DimmerButton()
+    let dimmerSlider = DimmerSlider()
     var clockLabel = ClockFaceLabel()
     
     override func viewDidLoad() {
@@ -19,6 +21,7 @@ class ClockViewController: UIViewController {
         createClockUI()
         dimView()
         createSettingsButton()
+        createDimmerSlider()
     }
 
     private func createClockUI() {
@@ -46,12 +49,19 @@ class ClockViewController: UIViewController {
     }
     
     private func createSettingsButton() {
-        let button = DimmerButton()
-        view.addSubview(button)
-        button.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).activate()
-        button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).activate()
+        view.addSubview(dimmerButton)
+        dimmerButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+        dimmerButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
         
-        button.addTarget(self, action: #selector(settingsButtonTapped), for: .touchUpInside)
+        dimmerButton.addTarget(self, action: #selector(settingsButtonTapped), for: .touchUpInside)
+    }
+    
+    private func createDimmerSlider() {
+        view.addSubview(dimmerSlider)
+        
+        dimmerSlider.centerYAnchor.constraint(equalTo: dimmerButton.centerYAnchor).isActive = true
+        dimmerSlider.leadingAnchor.constraint(equalTo: dimmerButton.trailingAnchor, constant: 10).isActive = true
+        
     }
     
     @objc func settingsButtonTapped() {
