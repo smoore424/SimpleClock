@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A7AEFB28D7A8FE006FA999 /* DimmerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A7AEFA28D7A8FE006FA999 /* DimmerSlider.swift */; };
+		01A7AEFD28D7ABBE006FA999 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A7AEFC28D7ABBE006FA999 /* Colors.swift */; };
 		01AC715628D64565005591E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC715528D64565005591E8 /* AppDelegate.swift */; };
 		01AC715828D64565005591E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC715728D64565005591E8 /* SceneDelegate.swift */; };
-		01AC715A28D64565005591E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC715928D64565005591E8 /* ViewController.swift */; };
 		01AC715D28D64565005591E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AC715B28D64565005591E8 /* Main.storyboard */; };
 		01AC715F28D64566005591E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01AC715E28D64566005591E8 /* Assets.xcassets */; };
 		01AC716228D64566005591E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AC716028D64566005591E8 /* LaunchScreen.storyboard */; };
+		01AC716A28D64638005591E8 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC716928D64638005591E8 /* ClockViewController.swift */; };
+		01AC716E28D646D9005591E8 /* Helpers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC716D28D646D9005591E8 /* Helpers+Extensions.swift */; };
+		01AC717028D64734005591E8 /* DimmerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC716F28D64734005591E8 /* DimmerButton.swift */; };
+		01AC717228D647E9005591E8 /* DimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC717128D647E9005591E8 /* DimmerView.swift */; };
+		01AC717428D64854005591E8 /* ClockFaceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC717328D64854005591E8 /* ClockFaceLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A7AEFA28D7A8FE006FA999 /* DimmerSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmerSlider.swift; sourceTree = "<group>"; };
+		01A7AEFC28D7ABBE006FA999 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		01AC715228D64565005591E8 /* SimpleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AC715528D64565005591E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01AC715728D64565005591E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01AC715928D64565005591E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01AC715C28D64565005591E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01AC715E28D64566005591E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01AC716128D64566005591E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01AC716328D64566005591E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01AC716928D64638005591E8 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		01AC716D28D646D9005591E8 /* Helpers+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+Extensions.swift"; sourceTree = "<group>"; };
+		01AC716F28D64734005591E8 /* DimmerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmerButton.swift; sourceTree = "<group>"; };
+		01AC717128D647E9005591E8 /* DimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmerView.swift; sourceTree = "<group>"; };
+		01AC717328D64854005591E8 /* ClockFaceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFaceLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A7AEF828D7A86B006FA999 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				01AC717328D64854005591E8 /* ClockFaceLabel.swift */,
+				01AC717128D647E9005591E8 /* DimmerView.swift */,
+				01AC716F28D64734005591E8 /* DimmerButton.swift */,
+				01A7AEFA28D7A8FE006FA999 /* DimmerSlider.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		01A7AEF928D7A896006FA999 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				01AC715528D64565005591E8 /* AppDelegate.swift */,
+				01AC715728D64565005591E8 /* SceneDelegate.swift */,
+				01AC716D28D646D9005591E8 /* Helpers+Extensions.swift */,
+				01AC715B28D64565005591E8 /* Main.storyboard */,
+				01AC715E28D64566005591E8 /* Assets.xcassets */,
+				01AC716028D64566005591E8 /* LaunchScreen.storyboard */,
+				01A7AEFC28D7ABBE006FA999 /* Colors.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		01AC714928D64565005591E8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +93,9 @@
 		01AC715428D64565005591E8 /* SimpleClock */ = {
 			isa = PBXGroup;
 			children = (
-				01AC715528D64565005591E8 /* AppDelegate.swift */,
-				01AC715728D64565005591E8 /* SceneDelegate.swift */,
-				01AC715928D64565005591E8 /* ViewController.swift */,
-				01AC715B28D64565005591E8 /* Main.storyboard */,
-				01AC715E28D64566005591E8 /* Assets.xcassets */,
-				01AC716028D64566005591E8 /* LaunchScreen.storyboard */,
+				01AC716928D64638005591E8 /* ClockViewController.swift */,
+				01A7AEF828D7A86B006FA999 /* Custom Views */,
+				01A7AEF928D7A896006FA999 /* Supporting */,
 				01AC716328D64566005591E8 /* Info.plist */,
 			);
 			path = SimpleClock;
@@ -138,9 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01AC715A28D64565005591E8 /* ViewController.swift in Sources */,
 				01AC715628D64565005591E8 /* AppDelegate.swift in Sources */,
+				01A7AEFD28D7ABBE006FA999 /* Colors.swift in Sources */,
+				01AC717428D64854005591E8 /* ClockFaceLabel.swift in Sources */,
 				01AC715828D64565005591E8 /* SceneDelegate.swift in Sources */,
+				01AC717028D64734005591E8 /* DimmerButton.swift in Sources */,
+				01AC716A28D64638005591E8 /* ClockViewController.swift in Sources */,
+				01AC716E28D646D9005591E8 /* Helpers+Extensions.swift in Sources */,
+				01A7AEFB28D7A8FE006FA999 /* DimmerSlider.swift in Sources */,
+				01AC717228D647E9005591E8 /* DimmerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
